@@ -1,0 +1,245 @@
+/*BASE FOUNDATIONS*/
+body {
+  background: rgb(255, 245, 247);
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, [col] 1fr);
+	grid-template-rows: repeat(5, [row] auto);
+	box-sizing: border-box;
+}
+li{
+	list-style:none;
+	margin:10px;
+}
+a {
+	color:white;
+	text-decoration:none;
+	background: #fc9d9d;
+	font-family: 'Lucida Sans';
+	font-weight: normal;
+	line-height: normal;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-variant: small-caps;
+	padding: 3px;
+	padding-right:25px;
+}
+/*FOOTER*/
+footer p {
+	text-align: center;
+	  color:gray;
+	  font-size:20px;
+  }
+
+/*ABOUT PAGE*/
+.bg-image img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.profile img{
+	width:60%;
+	height:auto;
+	margin:10px;
+}
+.title-a {
+  text-align: center;
+	font-family: Krona One;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 150px;
+	font-size: 48px;
+	letter-spacing: 0.1em;
+	margin: 100px;
+}
+.title-b {
+	font-family: Linden Hill;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 64px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.first-section h1,
+.second-section h1 {
+	font-size:35px;
+	margin:10px;
+}
+.first-section p,
+.second-section p {
+	font-size:20px;
+	line-height:35px;
+	margin:10px;
+}
+/*PORTFOLIO*/
+.section-b,
+.section-a {
+	font-family: Impact;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 200px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #1a1a1a;
+}
+.section-a{
+	display:flex;
+	float: left;
+}
+.section-b{
+	display:flex;
+	float: right;
+}
+#gallery-1 img{
+	width:40%;
+	height:auto;
+	margin:20px;
+}
+  
+/*CONTACT PAGE*/
+form{
+	margin-left:30px;
+}
+input[type="submit"] {
+	background-image: linear-gradient(
+		to left,
+		rgba(255, 146, 202, 0.75) 0%,
+		rgba(145, 149, 251, 0.86) 100%
+	);
+	box-shadow: 0 9px 25px -5px #df91fb;
+	font-family: "Abel", sans-serif;
+	padding: 0.5em 1.9em;
+	margin: 2.3em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #ffffff;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+}
+input[type="submit"]:hover {
+	transform: translatey(2px);
+}
+input[type="submit"]:active {
+	transform: translatey(5px);
+}
+.follow {
+	float:right;
+	font-family: Impact;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 200px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #1a1a1a;
+}
+/*INDEX HOME PAGE*/
+h1{
+	text-align:center;
+	font-size:60px;
+	margin:50px;
+	font-family: fenway-park-jf, sans-serif; 
+	font-weight: 400; 
+	font-style: normal; 
+}
+#profile{
+	grid-column:2/ span 2;
+	width:75%;
+	height:auto;
+}
+#fairy{
+	width:15%;
+	height:auto;
+	position:absolute;
+	top:30%;
+	left:80%;
+	transform:translate(-50%, -50%);
+	animation:fly 4s cubic-bezier(.23,.93,.66,.42)  infinite;
+
+}
+@keyframes fly{
+	0%{
+		
+	}
+	30%{
+		transform:translate(-50%, -40%);
+			transform:translateX(-70%);
+	}
+	50%{
+		transform:translate(-50%, -60%);
+		transform:translate(10%,50%);
+	}
+	100%{
+		transform:translate(-50%, -40%);
+		transform:translate(-50%, -50%);
+	}
+}
+.cls-1{
+	animation:pulsing 1s infinite;
+}
+@keyframes pulsing{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scale3d(1.0,1.06,1.06);
+	}
+		100%{
+		transform:scaleX(1);
+	}
+}
+/*LIST OF THINGS I CAN DO*/
+.li-b {
+	color: rgb(0, 101, 126);
+	list-style: none;
+	font-family: Quando;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 30px;
+	font-size: 150%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+.list-b {
+	grid-row: row;
+	grid-column: col /span 2;
+	align-self: end;
+	margin-bottom: 300px;
+}
+.list-c {
+	grid-row: row;
+	grid-column: col 3/span 2;
+	align-self: end;
+	margin-bottom: 300px;
+}
+
+
+/*VIDEO BACKGROUND*/
+:root {
+	/* Base font size */
+	font-size: 10px;
+
+	/* Full grid area variable */
+	--fullGrid: 1 / 1 / -1 / -1;
+}
+.video-bg {
+	/* Span the full grid */
+	grid-area: var(--fullGrid);
+
+	/* Re-size video to cover full screen while maintaining aspect ratio */
+	min-width: 25%;
+	min-height: 25%;
+	object-fit: cover;
+}
