@@ -1,6 +1,6 @@
 /*BASE FOUNDATIONS*/
 body {
-  background: rgb(255, 245, 247);
+  background: black;
 }
 .grid {
 	display: grid;
@@ -15,7 +15,7 @@ li{
 a {
 	color:white;
 	text-decoration:none;
-	background: #fc9d9d;
+	background: #3626c9;
 	font-family: 'Lucida Sans';
 	font-weight: normal;
 	line-height: normal;
@@ -30,7 +30,7 @@ a {
 /*FOOTER*/
 footer p {
 	text-align: center;
-	  color:gray;
+	  color:rgb(87, 87, 87);
 	  font-size:20px;
   }
 
@@ -45,21 +45,13 @@ footer p {
 	margin-bottom:30px;
 }
 .profile img{
-	width:70%;
+	width:100%;
 	height:auto;
 	margin:10px;
 }
-.title-a {
-  text-align: center;
-	font-family: Krona One;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 150px;
-	font-size: 48px;
-	letter-spacing: 0.1em;
-	margin: 100px;
-}
+
 .title-b {
+	color: #E3EBFF;
 	font-family: Linden Hill;
 	font-style: normal;
 	font-weight: normal;
@@ -71,11 +63,13 @@ footer p {
 }
 .first-section h1,
 .second-section h1 {
+	color: #E3EBFF;
 	font-size:35px;
 	margin:10px;
 }
 .first-section p,
 .second-section p {
+	color: #E3EBFF;
 	font-size:20px;
 	line-height:35px;
 	margin:10px;
@@ -105,10 +99,40 @@ footer p {
 	height:auto;
 	margin:20px;
 }
-  
+#gallery-1 a{
+	background:black;
+}
 /*CONTACT PAGE*/
+#quote{
+    display:block;
+    color:red;
+    fill:currentColor;
+    z-index:10;
+    padding-top:15px;
+    height:auto;
+    width:20%;
+}
+#heart{
+    display:block;
+    position:absolute;
+    color:white;
+    fill:currentColor;
+    z-index:5;
+    padding-left:65px;
+    padding-top:45px;
+    height:auto;
+    width:8%;
+}
+
 form{
-	margin-left:30px;
+	color:white;
+	font-family: 'Arial Narrow Bold', sans-serif ;
+	font-size: medium;
+	float:right; 
+	margin:2%;
+	background-color: rgb(22, 22, 22);
+	padding:1%;
+	max-width: 25%;
 }
 input[type="submit"] {
 	background-image: linear-gradient(
@@ -146,25 +170,25 @@ input[type="submit"]:active {
 	color: #1a1a1a;
 }
 /*INDEX HOME PAGE*/
+
 h1{
-	text-align:center;
-	font-size:60px;
-	margin:50px;
-	font-family: fenway-park-jf, sans-serif; 
-	font-weight: 400; 
-	font-style: normal; 
+	font-family: 'Montserrat', sans-serif;
+text-align: center;
+	font-size: 48px;
+	line-height: 150px;
+	letter-spacing: 0.1em;
+	color: #E3EBFF;
 }
-#profile{
-	grid-column:2/ span 2;
-	width:75%;
+.headline{
+	max-width: 100%;
 	height:auto;
 }
 #fairy{
-	width:15%;
+	width:5%;
 	height:auto;
 	position:absolute;
-	top:30%;
-	left:80%;
+	top:25%;
+	left:75%;
 	transform:translate(-50%, -50%);
 	animation:fly 4s cubic-bezier(.23,.93,.66,.42)  infinite;
 
@@ -204,9 +228,9 @@ h1{
 .li-b {
 	color: rgb(0, 101, 126);
 	list-style: none;
-	font-family: Quando;
+	font-family:none;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 30px;
 	font-size: 150%;
 	letter-spacing: 0.02em;
@@ -239,7 +263,7 @@ h1{
 	grid-area: var(--fullGrid);
 
 	/* Re-size video to cover full screen while maintaining aspect ratio */
-	min-width: 25%;
-	min-height: 25%;
+	max-width: 75%;
+	height:auto;
 	object-fit: cover;
 }
