@@ -112,20 +112,9 @@ footer p {
 	background:black;
 }
 /*CONTACT PAGE*/
-#quote{
-    display:block;
-    color:red;
-    fill:currentColor;
-    z-index:10;
-    padding-top:15px;
-    height:auto;
-    width:20%;
-}
 #heart{
     display:block;
     position:absolute;
-    color:white;
-    fill:currentColor;
     z-index:5;
     padding-left:65px;
     padding-top:45px;
