@@ -30,7 +30,7 @@ a {
 /*FOOTER*/
 footer p {
 	text-align: center;
-	  color:rgb(87, 87, 87);
+	  color:rgb(56, 56, 56);
 	  font-size:20px;
   }
 
@@ -44,10 +44,19 @@ footer p {
 	margin-top:30px;
 	margin-bottom:30px;
 }
+.profile{
+	display:flex;
+}
 .profile img{
-	width:100%;
+	float:left;
+	width:50vw;
 	height:auto;
 	margin:10px;
+}
+.first-section{
+	float:right;
+	width:50vw;
+	height:auto;
 }
 
 .title-b {
@@ -66,12 +75,12 @@ footer p {
 	color: #E3EBFF;
 	font-size:35px;
 	margin:10px;
+	line-height:5vh;
 }
 .first-section p,
 .second-section p {
 	color: #E3EBFF;
 	font-size:20px;
-	line-height:35px;
 	margin:10px;
 }
 /*PORTFOLIO*/
@@ -228,7 +237,7 @@ text-align: center;
 .li-b {
 	color: rgb(0, 101, 126);
 	list-style: none;
-	font-family:none;
+	font-family: Verdana, sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	line-height: 30px;
@@ -237,12 +246,14 @@ text-align: center;
 	text-transform: uppercase;
 }
 .list-b {
+	margin-top:90px;
 	grid-row: row;
 	grid-column: col /span 2;
 	align-self: end;
 	margin-bottom: 300px;
 }
 .list-c {
+	margin-top:90px;
 	grid-row: row;
 	grid-column: col 3/span 2;
 	align-self: end;
