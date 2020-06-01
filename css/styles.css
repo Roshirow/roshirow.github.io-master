@@ -90,7 +90,7 @@ footer p {
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
-	font-size: 200px;
+	font-size: 22vw;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #1a1a1a;
@@ -173,7 +173,7 @@ input[type="submit"]:active {
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
-	font-size: 200px;
+	font-size: 28vw;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: #1a1a1a;
@@ -191,6 +191,14 @@ text-align: center;
 .headline{
 	max-width: 100%;
 	height:auto;
+}
+#details{
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	font-size: 3vw;
+	color:rgb(134, 169, 197);
+	margin:30px;
+
 }
 #fairy{
 	width:5%;
