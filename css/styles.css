@@ -49,8 +49,8 @@ footer p {
 }
 .profile img{
 	float:left;
-	width:50vw;
-	height:auto;
+	width:50%;
+	max-height: 50%;
 	margin:10px;
 }
 .first-section{
@@ -65,22 +65,25 @@ footer p {
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
-	font-size: 64px;
+	font-size: 8vw;
 	text-align: center;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	margin-top:10vh;
+	margin-bottom:10vh;
 }
 .first-section h1,
 .second-section h1 {
 	color: #E3EBFF;
-	font-size:35px;
+	font-size: calc(20px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
 	margin:10px;
-	line-height:5vh;
 }
 .first-section p,
 .second-section p {
 	color: #E3EBFF;
-	font-size:20px;
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 	margin:10px;
 }
 /*PORTFOLIO*/
@@ -169,12 +172,12 @@ input[type="submit"]:active {
 }
 /*INDEX HOME PAGE*/
 
-h1{
+flex h1{
 	font-family: 'Montserrat', sans-serif;
-text-align: center;
+	text-align: center;
 	font-size: 48px;
-	line-height: 150px;
-	letter-spacing: 0.1em;
+	font-size: calc(20px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
 	color: #E3EBFF;
 }
 .headline{
