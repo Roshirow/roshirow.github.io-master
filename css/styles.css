@@ -47,12 +47,6 @@ footer p {
 .profile{
 	display:flex;
 }
-.profile img{
-	float:left;
-	width:50%;
-	max-height: 50%;
-	margin:10px;
-}
 .first-section{
 	float:right;
 	width:50vw;
