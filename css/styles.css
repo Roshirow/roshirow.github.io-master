@@ -165,15 +165,6 @@ input[type="submit"]:active {
 	color: #1a1a1a;
 }
 /*INDEX HOME PAGE*/
-
-flex h1{
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	font-size: 48px;
-	font-size: calc(20px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
-	color: #E3EBFF;
-}
 .headline{
 	max-width: 100%;
 	height:auto;
@@ -181,10 +172,23 @@ flex h1{
 #details{
 	text-align: center;
 	font-family: Verdana, sans-serif;
-	font-size: 3vw;
-	color:rgb(134, 169, 197);
+	font-size: calc(10px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+	line-height: calc(0.5em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
+	color:rgb(102, 19, 19);
 	margin:30px;
 
+}
+#photoshoot{
+	display:flex;
+}
+#photoshoot p{
+	float:left;
+	font-family: Verdana, sans-serif;
+	font-size: calc(10px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+	line-height: calc(2em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
+	color:rgb(67, 110, 190);
+	margin:20px;
+	text-align:center;
 }
 #fairy{
 	width:5%;
@@ -234,24 +238,24 @@ flex h1{
 	font-family: Verdana, sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	line-height: 30px;
-	font-size: 150%;
+	font-size: calc(10px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+	line-height: calc(2em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 }
 .list-b {
-	margin-top:90px;
+	margin-top:20vh;
 	grid-row: row;
 	grid-column: col /span 2;
 	align-self: end;
-	margin-bottom: 300px;
+	margin-bottom: 20vh;
 }
 .list-c {
-	margin-top:90px;
+	margin-top:20vh;
 	grid-row: row;
 	grid-column: col 3/span 2;
 	align-self: end;
-	margin-bottom: 300px;
+	margin-bottom: 20vh;
 }
 
 
