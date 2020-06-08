@@ -1,6 +1,8 @@
 /*BASE FOUNDATIONS*/
 body {
   background: black;
+  background-image: url(/img/background_angles.png);
+  width:100%;
 }
 .grid {
 	display: grid;
