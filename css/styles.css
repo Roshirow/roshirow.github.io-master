@@ -245,13 +245,20 @@ input[type="submit"]:active {
 	display:flex;
 	margin:20px;
 }
+#details h1{
+	font-family: Verdana, sans-serif;
+	font-size: calc(15px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
+	margin:20px;
+	color:rgb(219, 217, 217); 
+}
 #details p{
 	float:right;
 	text-align: center;
 	font-family: Verdana, sans-serif;
 	font-size: calc(10px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
 	line-height: calc(2em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
-	color:rgb(102, 19, 19);
+	color:rgb(212, 209, 209);
 
 }
 #photoshoot{
