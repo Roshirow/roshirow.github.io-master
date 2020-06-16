@@ -130,21 +130,21 @@ footer p {
 }
 /*PORTFOLIO*/
 #ux{
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 160px; /* Set the width of the sidebar */
+	width: 18vw; /* Set the width of the sidebar */
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
 	left: 0;
-	background-color: #111; /* Black */
+	background: rgba(0, 0, 0, 0.5);
 	overflow-x: hidden; /* Disable horizontal scroll */
-	padding-top: 20px;
+	padding:5px;
+	margin-top:90px;
 }
 #ux a{
 	color: #5d5bc5;
-	padding: 6px 8px 6px 16px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
 	display: block;
 }
 #ux a:hover {
