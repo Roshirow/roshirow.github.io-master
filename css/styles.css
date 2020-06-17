@@ -95,12 +95,17 @@ footer p {
 .profile{
 	display:flex;
 	margin:20px;
+	width:100vw;
+	height:auto;
 }
-.first-section{
-	float:right;
-	margin-left: 20px;
+	@media only screen and (max-width:600px){
+		.profile img {
+			display:none;
+		}
+	}
+.text{
+	margin: 20px;
 }
-
 .title-b {
 	color: #E3EBFF;
 	font-family: Linden Hill;
@@ -124,13 +129,13 @@ footer p {
 .first-section p,
 .second-section p {
 	color: #E3EBFF;
-	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+	font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
 	margin:10px;
+	overflow: auto;
 }
 /*PORTFOLIO*/
 #ux{
-	width: 18vw; /* Set the width of the sidebar */
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
@@ -139,6 +144,9 @@ footer p {
 	overflow-x: hidden; /* Disable horizontal scroll */
 	padding:5px;
 	margin-top:90px;
+}
+#ux li{
+	margin:0;
 }
 #ux a{
 	color: #5d5bc5;
@@ -151,8 +159,8 @@ footer p {
 	color: #7bbccc;
   }
 @media screen and (max-height: 450px) {
-	#ux {padding-top: 15px;}
-	#ux a {font-size: 18px;}
+	#ux {padding-top: 0px;}
+	#ux a {font-size: 8px;}
   }
 .section-b,
 .section-a {
