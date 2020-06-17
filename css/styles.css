@@ -105,6 +105,7 @@ footer p {
 	}
 .text{
 	margin: 20px;
+	margin-top: 90px;
 }
 .title-b {
 	color: #E3EBFF;
@@ -119,15 +120,21 @@ footer p {
 	margin-top:10vh;
 	margin-bottom:10vh;
 }
+.add-section{
+	margin:20px;
+}
 .first-section h1,
 .second-section h1 {
+	font-family: Verdana, sans-serif;
 	color: #E3EBFF;
 	font-size: calc(20px + (26 - 14) * ((100vw - 200px) / (1600 - 300)));
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 200px)/(1600 - 300)));
 	margin:10px;
 }
 .first-section p,
-.second-section p {
+.second-section p,
+.add-section p{
+	font-family: Verdana, sans-serif;
 	color: #E3EBFF;
 	font-size: calc(14px + (26 - 14) * ((100vw - 400px) / (1600 - 300)));
 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 400px)/(1600 - 300)));
